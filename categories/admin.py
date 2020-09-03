@@ -5,6 +5,8 @@ from . import models
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
 
+    """ Custom Category Admin """
+
     list_display = (
         "name",
         "description",
