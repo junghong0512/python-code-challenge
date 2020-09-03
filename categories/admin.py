@@ -5,4 +5,7 @@ from . import models
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
 
-    pass
+    list_display = (
+        "name",
+        "description",
+    )

@@ -16,8 +16,8 @@ class CustomUserAdmin(UserAdmin):
                     "bio",
                     "preference",
                     "language",
-                    "favorite_book_genre",
-                    "favorite_movie_genre",
+                    "fav_book_genre",
+                    "fav_movie_genre",
                 ),
             },
         ),
@@ -25,6 +25,15 @@ class CustomUserAdmin(UserAdmin):
     list_filter = (
         "preference",
         "language",
-        "favorite_book_genre",
-        "favorite_movie_genre",
+        "fav_book_genre",
+        "fav_movie_genre",
+    )
+
+    list_display = (
+        "username",
+        "email",
+        "preference",
+        "language",
+        "fav_book_genre",
+        "fav_movie_genre",
     )
